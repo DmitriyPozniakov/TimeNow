@@ -1,0 +1,250 @@
+:root{
+    --main-text-color: #425466;
+    --button-bg-color: #1D1B67;
+    --header-bg-color: #46CCDE;
+    --preheading-color: #3B60BF;
+    --customize-heading-color: #005661;
+    --customize-background: #CDF9FF;
+    --background: linear-gradient(to right, #fff 50%, var(--header-bg-color) 50%); 
+    --font-size-text: 1.6rem;
+    --font-size-hero-heading: 4.8rem;
+    --font-size-heading: 3.5rem;
+    --margin-bottom: 50px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    min-width: 350px;
+    overflow-x: hidden;
+}
+
+p {
+    color: var(--main-text-color);
+}
+
+button {
+    border: none;
+    outline: none;
+    font-weight: 600;
+    padding: 20px 22px;
+    font-size: var(--font-size-text);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.start-button {
+    background-color: var(--button-bg-color);
+    color: #fff;
+    transition: 250ms ease;
+}
+
+.start-button:hover,
+.start-button:active {
+    
+    background-color: #352F8E;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    display: none;
+    width: 100%;
+    background-color: var(--customize-background);
+    font-size: var(--font-size-text);
+    padding: 40px;
+}
+
+.svg-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 44px;
+}
+
+.menu h2 a {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #005661;
+    font-weight: 700;
+}
+
+.x-mark {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.list-nav {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.list-nav a {
+    text-decoration: none;
+    color: var(--main-text-color);
+    font-size: var(--font-size-text);
+    position: relative;
+    transition: 250ms ease;
+}
+
+.list-nav a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #212529;
+    transition: 250ms ease;
+}
+
+.list-nav a:hover,
+.list-nav a:active {
+    color: #212529;
+}
+
+.list-nav a:hover::before {
+    width: 100%;
+}
+
+.closed {
+    display: none;
+}
+
+.wrapper {
+    padding: 12px 24px;
+}
+
+.wrapper-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+footer {
+    padding: 12px 24px;
+}
+
+.links-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: var(--margin-bottom);
+}
+
+.link-list {
+    list-style-type: none;
+    font-size: var(--font-size-text);
+}
+
+.link-list li:first-child {
+    font-weight: 700;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.link-list li {
+    color: var(--main-text-color);
+    margin-bottom: 15px;
+    transition: 250ms ease;
+    cursor: pointer;
+}
+
+.link-list li:hover {
+    font-weight: 700;
+}
+
+.mar {
+    margin-right: 30px;
+}
+
+.svg-footer {
+    margin-bottom: 10px;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer-header {
+    margin-bottom: 15px;
+}
+
+.footer-span {
+    color: var(--main-text-color);
+    font-size: var(--font-size-text);
+}
+
+.outline-button {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+
+    gap: 50px;
+    padding: 5px 5px 5px 25px;
+    border: 1px solid var(--main-text-color);
+    border-radius: 12px;
+}
+
+.footer-header {
+    color: var(--button-bg-color);
+    font-size: var(--font-size-text);
+}
+
+
+
+
+@media (max-width: 620px) {
+
+    .closed {
+        display: block;
+    }
+    
+    header {
+        background: transparent;
+    }
+
+    .none {
+        display: none;
+    }
+
+    .wrap-nav {
+        display: none;
+    }
+
+    .container-article p {
+        max-width: 350px;
+    }
+
+    .wrapper-footer {
+        flex-direction: column;
+    } 
+}
+

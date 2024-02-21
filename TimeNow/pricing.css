@@ -1,0 +1,153 @@
+
+header {
+    padding: 12px 24px;
+    background-color: #fff;
+    margin-bottom: var(--margin-bottom);
+}
+
+.container-article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.container-article h1 {
+    font-size: var(--font-size-hero-heading);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.container-article p {
+    text-align: center;
+    max-width: 620px;
+    font-size: var(--font-size-text);
+    line-height: 1.3;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.wrapper span {
+    color: var(--main-text-color);
+    font-size: var(--font-size-text);
+}
+
+.switch {
+	display: inline-block;
+	height: 28px;
+	position: relative;
+	width: 50px;
+}
+
+.switch input {
+	display: none;
+}
+
+.slider {
+	background-color: #ccc;
+	bottom: 0;
+	cursor: pointer;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transition: .4s;
+    background-color: #3A84F7
+}
+
+.slider:before {
+	background-color: #fff;
+	bottom: 4px;
+	content: "";
+	height:20px;
+	left: 4px;
+	position: absolute;
+	transition: .4s;
+	width:20px;
+}
+
+input:checked + .slider:before {
+	transform: translateX(22px);
+}
+
+.slider.round {
+	border-radius: 34px;
+}
+
+.slider.round:before {
+	border-radius: 50%;
+}
+
+.card-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 12px 24px;
+    gap: 50px;
+    margin-bottom: 80px
+}
+
+.card-article {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid #A8A8A8;
+    flex: 1 0 30rem;
+    padding: 18px;
+    border-radius: 6px;
+}
+
+.card , .btn {
+    width: 100%;
+}
+
+strong {
+    font-size: var(--font-size-heading);
+}
+
+sub {
+    font-size: var(--font-size-text);
+    color: #A8A8A8;
+}
+
+.card p {
+    font-size: var(--font-size-text);
+}
+
+hr {
+    margin-bottom: 15px;
+}
+
+.card ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: var(--font-size-text);
+    color: var(--main-text-color);
+}
+
+.card ul li:last-child {
+    margin-bottom: 10px;
+}
+
+.card ul li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
